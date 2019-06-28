@@ -264,7 +264,7 @@ img{
     height:300px;
     align-items:center;
     justify-content:space-around;
-    transform:translateY(300px);
+    transform:translateY(500px);
     transition:2s;
     z-index:1;
     background:tan;
@@ -313,7 +313,7 @@ img{
 
 .play-btn{
     border-radius:50%;
-    background:green;
+    background:rgb(98, 187, 98);
     height:100px;
     width:100px;
     color:white;
@@ -322,8 +322,43 @@ img{
     cursor:pointer;
 }
 
-.play-btn:hover{
+.stat-btn{
+    border-radius:50%;
+    background:rgb(197, 117, 117);
+    height:100px;
+    width:100px;
+    color:white;
+    font-size:18px;
+    text-transform:uppercase;
+    cursor:pointer;
+
+}
+
+.play-btn, .stat-btn:hover{
     opacity:2;
+}
+
+.data-junkie-div{
+    width:30%;
+    outline:1px solid black;
+    background:lightgray;
+    transition:1s;
+}
+
+
+.close-span{
+    height:20px;
+    widows:25px;
+    background:red;
+    border-radius:5%;
+    position:relative;
+    left:95%;
+    border-radius:5%;
+    cursor:pointer;
+}
+
+.buttons-div{
+    display:flex;
 }
 
 
@@ -333,8 +368,14 @@ img{
     }
 
     .header, .score-row, .player-container{
+        display:flex;
         font-size:15px;
-        width:50%;
+        width:70%;
+        margin-left:2%;
+    }
+
+    .data-junkie-div{
+        margin-left:2%;
     }
 
     .result-panel{
