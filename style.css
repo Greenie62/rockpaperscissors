@@ -327,5 +327,21 @@ img{
 }
 
 
+@media screen and (max-width:768px){
+    img{
+        height:65px;
+    }
+
+    .header, .score-row, .player-container{
+        font-size:15px;
+        width:50%;
+    }
+
+    .result-panel{
+        margin-right:50%;
+    }
+}
+
+
 
 
