@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    font-size:25px;
+    background:linear-gradient(#666,#777,#888,#999);
+    color:white;
+    text-shadow:2px 1px black;
+
+}
+
+.rocks-header{
+    position:relative;
+    animation:drop 2s forwards 
+}
+
+@keyframes drop{
+    0%{top:-200px}
+    100%{top:0px}
+}
+
+.paper-header{
+    display:flex;
+    position:relative;
+}
+
+.p{ opacity:0;
+    animation:float 2s forwards;
+    position:relative;
+} 
+
+ @keyframes float{
+    0%{left:-80px;top:-100px;}
+    90%{left:80px;top:-50px;}
+    100%{left:0px;top:0px;}
+}
+
+
+
+.a{ 
+    opacity:0;
+    animation:float 2s forwards .5s;
+    position:relative;
+}
+
+@keyframes float{
+    0%{left:-80px;top:-100px;opacity:1}
+    90%{left:80px;top:-50px;opacity:1}
+    100%{left:0px;top:0px;opacity:1}
+}
+
+.ptwo{
+    opacity:0;
+    animation:float 2s forwards 1s;
+    position:relative;
+}
+
+@keyframes float{
+    0%{left:-80px;top:-100px;opacity:1}
+    90%{left:80px;top:-50px;opacity:1}
+    100%{left:0px;top:0px;opacity:1}
+}
+
+.e{
+    opacity:0;
+    animation:float 2s forwards 1.5s;
+    position:relative;
+}
+
+@keyframes float{
+    0%{left:-80px;top:-100px;opacity:1}
+    90%{left:80px;top:-50px;opacity:1}
+    100%{left:0px;top:0px;opacity:1}
+}
+
+.r{
+    opacity:0;
+    animation:float 2s forwards 2s;
+    position:relative;
+}
+
+@keyframes float{
+    0%{left:-80px;top:-100px;opacity:1}
+    90%{left:80px;top:-50px;opacity:1}
+    100%{left:0px;top:0px;opacity:1}
+}
+
+.scissor-header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.scissor-one{
+    position:relative;
+    animation-name:openscissor; 
+    animation-fill-mode:forwards;
+    animation-duration:3s;
+}
+
+@keyframes openscissor{
+    0%{left:-200px;top:-200px;}
+    25%{left:-150px;top:-150px;}
+    50%{left:-100px;top:-100px;}
+    75%{left:-50px;top:-50px;}
+    100%{left:0px;top:0px;}
+}
+
+.scissor-two{
+    position:relative;
+    color:green;
+    animation-name:closescissors; 
+    animation-fill-mode:forwards;
+    animation-duration:3s;
+}
+
+@keyframes closescissors{
+    0%{left:-200px;top:200px;}
+    50%{left:-100px;top:100px;}
+    100%{left:0px;top:0px;}
+ 
+}
+
+
+
+/*SCISSORS animation */
+
+
+.s{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 2.5s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.c{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 3.0s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.i{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 3.5s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.s-two{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 4.0s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.s-three{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 2.5s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.o{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 3s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.r-two{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 3.5s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+.s-four{
+    position:relative;
+    opacity:0;
+    animation:blowin 2s forwards 4s
+}
+
+@keyframes blowin{
+    0%{left:300px;opacity:1}
+    100%{left:0px;opacity:1}
+}
+
+
+.score-row{
+    display:flex;
+    width:100%;
+    justify-content:space-evenly;
+    align-items:center;
+    z-index:1;
+}
+
+
+
+.player-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.choice-panel{
+    flex:1;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+   
+   
+}
+
+img{
+    height:150px;
+    cursor:pointer;
+   
+}
+
+
+.result-panel{
+    width:50%;
+    margin:auto;
+    border:1px solid black;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    height:300px;
+    align-items:center;
+    justify-content:space-around;
+    transform:translateY(300px);
+    transition:2s;
+    z-index:1;
+    background:tan;
+}
+
+.see-result-panel{
+    transform:translateY(-200px)
+}
+
+
+.animate-side{
+    position:relative;
+    animation:animateside 3s forwards;
+}
+
+
+
+.animate-shake{
+    position:relative;
+    animation:animateshake 3s forwards;
+}
+
+
+@keyframes animateshake{
+    0%{top:-20px}
+    25%{top:20px}
+    50%{top:-30px}
+    75%{top:30px}
+    100%{top:0px}
+}
+
+.animate-side{
+    position:relative;
+    animation:animateside 3s forwards;
+}
+
+
+@keyframes animateside{
+    0%{left:-20px}
+    25%{left:20px}
+    50%{left:-30px}
+    75%{left:30px}
+    100%{left:0px}
+}
+
+
+.play-btn{
+    border-radius:50%;
+    background:green;
+    height:100px;
+    width:100px;
+    color:white;
+    font-size:18px;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.play-btn:hover{
+    opacity:2;
+}
+
+
+
+

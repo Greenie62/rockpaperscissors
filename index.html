@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class='header'>
+        <h1 class='rocks-header'>ROCK</h1>
+        <h1 class='paper-header'>
+            <h1 class='p'>P</h1>
+            <h1 class='a'>A</h1>
+            <h1 class='ptwo'>P</h1>
+            <h1 class='e'>E</h1>
+            <h1 class='r'>R</h1>
+        </h1>
+        <h1 class='scissors-header'>
+            <h1 class="s">S</h1>
+            <h1 class="c">C</h1>
+            <h1 class="i">I</h1>
+            <h1 class="s">S</h1>
+            <h1 class="s">S</h1>
+            <h1 class="o">O</h1>
+            <h1 class="r-two">R</h1>
+            <h1 class="s">S</h1>
+    </div>
+    <div class='score-row'>
+      
+        <h1>Wins:<span id='wins'></span></h1>
+        <h1>Losses:<span id='losses'></span></h1>
+    </div>
+
+   
+        
+     <div class='player-container'>
+        
+        <div class='choice-panel' data-value='rock'>
+            <img class='rock-btn btn' src="assets/rock.png">
+        </div>
+        <div class='choice-panel' data-value='paper'>
+            <img class='paper-btn btn' src="assets/paper.png">
+        </div>
+        <div class='choice-panel' data-value='scissors'>
+            <img class='scissors-btn btn' src="assets/scissors.png">
+        </div>
+        
+    </div>
+
+        <div class='result-panel'>
+            
+            <h3 id='tie-output'>Player X threw <span id='playerchoice'></span>
+             while the computer threw <span id='computerchoice'></span>.
+             <span id='winner'></span> Wins!</h3>
+             <button class='play-btn'>Play Again</button>
+        </div>
+  
+        <script src="script.js"></script>
+</body>
+</html>
